@@ -12,7 +12,8 @@ body{
 }
 
 a{
- text-decoration: none;
+    outline: 0;
+    text-decoration: none;
     color: #000;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
@@ -25,9 +26,11 @@ a:hover{
 }
 
 /*header*/
-
 #header-nav{
-    background-color: #1D1F20;
+    background-color: #B61924;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
 }
 
 #header-nav a{
@@ -40,6 +43,16 @@ a:hover{
     color: #000;
 }
 
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color: #fff;
+
+}
+
+.navbar-nav .active a{
+    color: #000;
+    background-color: #fff;
+}
 
 
 
@@ -60,8 +73,8 @@ a:hover{
 }
 
 #right{
-    background-color: #1D242D;
-    color: #fff;
+    background-color: #232323;
+    color: #AFB9C4;
     z-index: 1;
 
 }
@@ -75,21 +88,21 @@ a:hover{
     .container {
         width: 90%;
     }
-    /*#left{*/
+    #left{
 
-        /*-webkit-box-sizing: border-box;*/
-        /*-moz-box-sizing: border-box;*/
-        /*box-sizing: border-box;*/
-        /*box-shadow:1px 1px 1px #ccc ;*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow:1px 1px 1px #ccc ;
 
-    /*}*/
+    }
 
-    /*#middle{*/
-        /*-webkit-box-sizing: border-box;*/
-        /*-moz-box-sizing: border-box;*/
-        /*box-sizing: border-box;*/
-        /*box-shadow:1px 1px 1px #ccc ;*/
-    /*}*/
+    #middle{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow:1px 1px 1px #ccc ;
+    }
 
 }
 
@@ -159,11 +172,13 @@ a:hover{
     list-style: none;
 }
 .list-container li{
-    padding: 3% 0;
-    float: left;
-    border-bottom: 1px solid whitesmoke;
+    width: 100%;
     padding-right: .25em;
     position: relative;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    float: left;
+    border-bottom: 2px solid whitesmoke;
     list-style: none;
 
 
@@ -190,4 +205,40 @@ a:hover{
 #main-title:hover{
     text-decoration: none;
 
+}
+
+
+/*right*/
+
+#right a{
+    color: #AFB9C4;
+}
+
+#right a:hover{
+    color: #fff;
+}
+
+
+
+.panel-title{
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.right-mainarticle{
+    font-size: 1em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.article-list{
+    padding: 3% 0;
+    font-size: 1em;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#right-main-one,
+#right-main-two{
+   padding-bottom: 20px;
 }
