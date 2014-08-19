@@ -6,6 +6,10 @@
 
 
 
+
+/**/
+
+
 body{
     background-color:#F2F2F2 ;
     font-family: '微软雅黑';
@@ -27,32 +31,32 @@ a:hover{
 
 /*header*/
 #header-nav{
-    background-color: #B61924;
+    /*background-color: #B61924;*/
     border: 0;
     outline: 0;
     border-radius: 0;
 }
 
-#header-nav a{
-    font-weight: bold;
-    color: #fff;
-}
+/*#header-nav a{*/
+    /*font-weight: bold;*/
+    /*color: #fff;*/
+/*}*/
 
-#header-nav .dropdown li a{
-    font-weight: 100;
-    color: #000;
-}
+/*#header-nav .dropdown li a{*/
+    /*font-weight: 100;*/
+    /*color: #000;*/
+/*}*/
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #000;
-    background-color: #fff;
+/*.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {*/
+    /*color: #000;*/
+    /*background-color: #fff;*/
 
-}
+/*}*/
 
-.navbar-nav .active a{
-    color: #000;
-    background-color: #fff;
-}
+/*.navbar-nav .active a{*/
+    /*color: #000;*/
+    /*background-color: #fff;*/
+/*}*/
 
 
 
@@ -84,7 +88,33 @@ a:hover{
     padding-bottom: 20px;
 }
 
+
+@media screen and (max-width: 650px) {
+    #open-background{
+        z-index: 100;
+        display: block;
+        background: url("gameoverback.jpg") no-repeat center center;
+        background-size:cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+
+    }
+}
+
 @media screen and (min-width: 768px){
+
+    #open-background{
+        z-index: 100;
+        display: block;
+        background: url("back2.jpg") no-repeat center center;
+        background-size:cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+
+    }
+
     .container {
         width: 90%;
     }
@@ -104,7 +134,17 @@ a:hover{
         box-shadow:1px 1px 1px #ccc ;
     }
 
+
+
+    #right-main-one,
+    #right-main-three{
+
+    }
+
 }
+
+
+
 
 @media screen and (max-width: 992px){
     .container {
@@ -239,6 +279,8 @@ a:hover{
 }
 
 #right-main-one,
-#right-main-two{
+#right-main-two,
+#right-main-three,
+#right-main-four{
    padding-bottom: 20px;
 }
