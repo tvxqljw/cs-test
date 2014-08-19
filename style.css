@@ -89,7 +89,7 @@ a:hover{
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     #open-background{
         z-index: 100;
         display: block;
@@ -100,39 +100,64 @@ a:hover{
         -o-background-size:cover;
 
     }
+
+    #left,
+    #middle,
+    #right,
+    #right-main-one{
+        margin-top: 10px;
+    }
+
+
+    #right-main-two,
+    #right-main-three,
+    #right-main-four{
+        padding-top: 20px;
+       border-top: 20px #F2F2F2 solid;
+    }
+
+    #footer-5,
+    #footer-2,
+    #footer-3,
+    #footer-4{
+        display:none ;
+    }
 }
 
 @media screen and (min-width: 768px){
 
     #open-background{
-        z-index: 100;
-        display: block;
-        background: url("back2.jpg") no-repeat center center;
-        background-size:cover;
-        -webkit-background-size:cover;
-        -moz-background-size:cover;
-        -o-background-size:cover;
+        /*z-index: 100;*/
+        /*display: block;*/
+        /*background: url("back2.jpg") no-repeat center center;*/
+        /*background-size:cover;*/
+        /*-webkit-background-size:cover;*/
+        /*-moz-background-size:cover;*/
+        /*-o-background-size:cover;*/
 
+        display: none;
+        width: 0;
+        height: 0;
     }
 
     .container {
         width: 90%;
     }
-    #left{
+    /*#left{*/
 
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        box-shadow:1px 1px 1px #ccc ;
+        /*-webkit-box-sizing: border-box;*/
+        /*-moz-box-sizing: border-box;*/
+        /*box-sizing: border-box;*/
+        /*box-shadow:1px 1px 1px #ccc ;*/
 
-    }
+    /*}*/
 
-    #middle{
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        box-shadow:1px 1px 1px #ccc ;
-    }
+    /*#middle{*/
+        /*-webkit-box-sizing: border-box;*/
+        /*-moz-box-sizing: border-box;*/
+        /*box-sizing: border-box;*/
+        /*box-shadow:1px 1px 1px #ccc ;*/
+    /*}*/
 
 
 
@@ -160,6 +185,7 @@ a:hover{
 #main{
     height: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #fff;
 }
 
@@ -284,3 +310,51 @@ a:hover{
 #right-main-four{
    padding-bottom: 20px;
 }
+
+
+/*footer*/
+
+#footer{
+    padding: 5%;
+    width: 100%;
+    background-color: #000;
+}
+
+#footer .container{
+    width: 90%;
+}
+
+#footer h4{
+    color: #999;
+    font-size: 14px;
+}
+
+
+.fan-link ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.fan-link li{
+
+    width: 100%;
+    padding-right: .25em;
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.fan-link li a{
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #999;
+
+}
+
+.fan-link a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
