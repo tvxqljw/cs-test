@@ -1,0 +1,117 @@
+/*全局变量*/
+@screen-sm-min = 768px;
+@screen-md-min = 992px;
+@screen-lg-min = 1200px;
+
+
+
+
+body{
+    background-color:#F5F5F5 ;
+}
+
+#header-nav a{
+    font-weight: bold;
+    color: #fff;
+}
+
+#header-nav .dropdown li a{
+    font-weight: 100;
+    color: #000;
+}
+
+
+#left,
+#middle,
+#right{
+    height: auto;
+    background-color: #fff;
+}
+
+#left{
+    z-index: 3;
+}
+
+#middle{
+    z-index: 2;
+}
+
+#right{
+    z-index: 1;
+
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .container {
+        width: 90%;
+    }
+    #left{
+        padding:20px 0 20px 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow:3px 0 3px #888 ;
+
+    }
+
+    #middle{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow:3px 0 3px #888 ;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .container {
+        width: 90%;
+    }
+   #middle{
+       margin: 20px 0;
+   }
+}
+
+
+
+#main{
+    height: 100%;
+    /*background-color: #839FC5;*/
+    margin-top: 70px;
+}
+
+#left img{
+    float: none;
+}
+
+.title-menu {
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: .5em;
+}
+
+.title-menu h2{
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #0c0c0c;
+    display: inline-block;
+    font-size: 1.3em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.title-menu {
+    width: 100%;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 0 5px 5px -2px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 5px 5px -2px;
+    box-shadow: rgba(0,0,0,0.1) 0 5px 5px -2px;
+    cursor: pointer;
+    display: inline-block;
+    padding-bottom: .5em;
+}
