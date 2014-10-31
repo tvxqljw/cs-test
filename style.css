@@ -11,7 +11,6 @@
 
 
 body{
-    background-color:#fff ;
     font-family: '微软雅黑';
 }
 
@@ -38,7 +37,7 @@ a:hover{
 }
 
 #logo{
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 
@@ -60,7 +59,35 @@ a:hover{
 }
 
 #banner{
-    background: #ccc;
+    height: auto;
+}
+
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+
+.carousel .item {
+    height: 100%;
+}
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption{
+    /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);*/
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    /* Safari 4-5, Chrome 1-9 */
+    /* -webkit-gradient(,  [, ]?,  [, ]? [, ]*) */
+    background: -webkit-gradient(linear,top,from(rgba(0, 0, 0, .2)),to(rgba(0, 0, 0, .2)));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
 .content_wiget ul{
@@ -187,6 +214,7 @@ a:hover{
 }
 
 
+
 @media screen and (max-width: 768px) {
     #open-background{
         z-index: 100;
@@ -219,7 +247,8 @@ a:hover{
     #footer-2,
     #footer-3,
     #footer-4,
-    #footer-1{
+    #footer-1,
+    #CCNU_Login{
         display:none ;
     }
 }
@@ -239,6 +268,26 @@ a:hover{
         width: 0;
         height: 0;
     }
+
+    #banner{
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .fourimg{
+        height: 250px;
+        overflow: hidden;
+    }
+    .fourimg img{
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+    }
+
+
+
 
     .container {
         width: 80%;
@@ -286,8 +335,7 @@ a:hover{
 
 #main{
     height: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #left img{
@@ -457,6 +505,7 @@ a:hover{
     border-radius: 0;
     padding: 2%;
     width: 100%;
+    color:#ffdb93;
 
 }
 
@@ -474,6 +523,9 @@ a:hover{
     font-size: 14px;
 }
 
+#footer-1 {
+    text-align:center ;
+}
 
 .fan-link ul{
     list-style-type: none;
@@ -514,3 +566,47 @@ a:hover{
     color: #fff;
 }
 
+.panel-default {
+    border-color: #444444;
+}
+
+.panel-default > .panel-heading{
+    color: #FFDB93;
+    background-color: #932439;
+}
+
+button, input, optgroup, select, textarea {
+}
+
+input[type="text"],input[type="password"]{
+    margin:0 auto;
+    padding: 2%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    outline: 0;
+    border: 1px solid #ccc;
+
+
+}
+button[type="submit"]{
+    margin:0 auto;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.carousel-control.left,.carousel-control.right{
+    top: 150px;
+    z-index: 999;
+    width: 72px;
+    overflow: hidden;
+    height: 72px;
+    background: url("ico_sliding_910.png") no-repeat;
+}
+
+.carousel-control.left{
+    background-position: 0 0;
+}
+.carousel-control.right{
+    background-position: 0 -72px;
+}
